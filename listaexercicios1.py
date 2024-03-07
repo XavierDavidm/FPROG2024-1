@@ -29,4 +29,7 @@ print('A) Bruce Wayne')
 print('B) Clark Kent')
 print('C) Peter Parker')
 print('D) Tony Stark')
-print('E)')
+print('E) Steve Rogers')
+print('a alternativa correta é?')
+
+
