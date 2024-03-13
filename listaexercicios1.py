@@ -24,12 +24,13 @@ print('Bem vindo',nome)
 #seria esta:
 #Você respondeu alternativa d. A resposta correta é a alternativa a
 
-print('Quiz: Qual é o verdadeiro nome ddo super-herói batman?')
-print('A) Bruce Wayne')
-print('B) Clark Kent')
-print('C) Peter Parker')
-print('D) Tony Stark')
-print('E) Steve Rogers')
-print('a alternativa correta é?')
+print('Qual é o verdadeiro nome do super-herBatman?')
+print('A)Bruce Wayne')
+print('B)Clark Kent')
+print('C)Peter Parker')
+print('D)Tony Stark')
+print('E)Steve Rogers')
+resposta = input('qual é a resposta correta')
+print('a resposta correta é A) e voce respondeu', resposta)
 
 
