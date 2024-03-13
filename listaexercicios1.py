@@ -30,7 +30,13 @@ print('B)Clark Kent')
 print('C)Peter Parker')
 print('D)Tony Stark')
 print('E)Steve Rogers')
-resposta = input('qual é a resposta correta')
+resposta = input('qual é a resposta correta?')
 print('a resposta correta é A) e voce respondeu', resposta)
+
+#Como poderíamos tornar o programa acima mais genérico, de maneira que pudéssemos
+#registrar qualquer questão objetiva com 5 alternativas?]
+
+
+
 
 
