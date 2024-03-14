@@ -38,7 +38,7 @@ print('a resposta correta é A) e voce respondeu', resposta)
  
 #COLOCANDO PERGUNTAS COMO VARIAVEIS exemplo 5 
 
-pergunta = '7+3 é igual a? ' 
+pergunta = '7+3 é igual a?' 
 resposta1 = '10'
 resposta2 = '11'
 resposta3 = '9'
@@ -54,11 +54,4 @@ print(resposta5)
 respostaDoUsuario = input('qual é a resposta correta? ')
 print('a resposta correta é ',correta,'e voce respodeu: ',respostaDoUsuario)
 
-
-
-
-
-
-
-
-
+#fim lista 1
