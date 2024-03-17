@@ -39,6 +39,18 @@ dinheiroMotorista=float(input('digite o valor disponivel: '))
 totalLitros=round(dinheiroMotorista/precoLitroGasolina)
 print('voce colocou',totalLitros,'Litros de gasolina no tanque')
 
+#.6- A loja de eletrônicos TechMundo vende uma certa quantidade de smartphones e uma quantidade
+#de tablets a cada dia. Cada smartphone custa R$ 1000,00 e cada tablet custa R$ 1500,00. Ao final
+#do dia, o dono quer saber quanto arrecadou com a venda dos smartphones e dos tablets. Escreva
+#um programa que leia o número de smartphones e tablets vendidos em um dia e calcule o total
+#arrecadado.
+precosmartphone=1000
+precotablet=1500
+smartphonesVendidos=int(input('quantos smartphones vendemos hoje? '))
+tabletsVendidos=int(input('quantos tablets vendemos hoje?' ))
+totalvendastechmundo= (smartphonesVendidos*precosmartphone)+(tabletsVendidos*precotablet)
+print('vendemos',smartphonesVendidos,'smartphones e',tabletsVendidos,'tablets hoje e obtivemos',totalvendastechmundo,'de lucro')
+
 
 
 
