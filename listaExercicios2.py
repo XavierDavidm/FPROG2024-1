@@ -1,7 +1,7 @@
 #.1- Faça um algoritmo que leia uma quantidade de tempo em minutos e escreva o tempo equivalente 
 #em segundos na tela.
 #float(numeros reais) e int(numeros inteiros) convertem o input para valores logicos possibilitando contas
-minutos = float(input('quantos minutos?'))
+minutos = float(input('quantos minutos? '))
 segundos = minutos*60
 print(minutos, 'minutos equivalem','a',segundos,'segundos')
 
@@ -11,9 +11,9 @@ print(minutos, 'minutos equivalem','a',segundos,'segundos')
 
 dolarcotacao=4.97 
 print('a atual cotação do dolar para real é',dolarcotacao)
-quantidade = float(input('quantos dolares deseja comprar?'))
+quantidade = float(input('quantos dolares deseja comprar? '))
 total=dolarcotacao*quantidade
-print('voce precisa pagar',total,'reais para ter',quantidade,'dolares!')
+print('você precisa pagar',total,'reais para ter',quantidade,'dolares!')
 
 #.3- Um restaurante de buffet a quilo cobra R$ 40,00 por quilo. Escreva um programa que leia o peso 
 #do prato do cliente e calcule o valor a ser pago.
@@ -21,7 +21,7 @@ print('voce precisa pagar',total,'reais para ter',quantidade,'dolares!')
 porquilo=40.00
 peso=float(input('informe o peso do prato: '))
 valorbuffet=peso*porquilo
-print('voce devera pagar',valorbuffet,'reais por',peso,'quilos de comida')
+print('você devera pagar',valorbuffet,'reais por',peso,'quilos de comida')
 
 #.4- Faça um algoritmo que permita ao aluno calcular a sua média final na Unisinos. Leia a nota do grau
 #A e do grau B e escreva o resultado na tela. Lembrando que o Grau A vale 1/3 e o Grau B 2/3
@@ -37,7 +37,7 @@ print('sua media A foi ',mediaA,'sua media B foi ',mediaB,'então sua media fina
 precoLitroGasolina=5.50
 dinheiroMotorista=float(input('digite o valor disponivel: '))
 totalLitros=round(dinheiroMotorista/precoLitroGasolina)
-print('voce colocou',totalLitros,'Litros de gasolina no tanque')
+print('você colocou',totalLitros,'Litros de gasolina no tanque')
 
 #.6- A loja de eletrônicos TechMundo vende uma certa quantidade de smartphones e uma quantidade
 #de tablets a cada dia. Cada smartphone custa R$ 1000,00 e cada tablet custa R$ 1500,00. Ao final
@@ -47,9 +47,23 @@ print('voce colocou',totalLitros,'Litros de gasolina no tanque')
 precosmartphone=1000
 precotablet=1500
 smartphonesVendidos=int(input('quantos smartphones vendemos hoje? '))
-tabletsVendidos=int(input('quantos tablets vendemos hoje?' ))
+tabletsVendidos=int(input('quantos tablets vendemos hoje? '))
 totalvendastechmundo= (smartphonesVendidos*precosmartphone)+(tabletsVendidos*precotablet)
 print('vendemos',smartphonesVendidos,'smartphones e',tabletsVendidos,'tablets hoje e obtivemos',totalvendastechmundo,'de lucro')
+
+#.7-Um criador de pássaros deseja saber a quantidade de ração diária necessária para alimentar seus
+#pássaros. Cada pássaro consome 30 gramas de ração por dia. Escreva um programa que leia o
+#número de pássaros que o criador possui e calcule a quantidade total de ração necessária por dia.
+racao=30
+numeroDePassaros=int(input('quantos passáros você possui? '))
+totalRacaoDiaria=racao*numeroDePassaros
+print('para alimentar',numeroDePassaros,'passáros você precisa de',totalRacaoDiaria,'gramas de ração por dia')
+
+#.8-
+
+
+
+
 
 
 
