@@ -35,6 +35,41 @@ if numerodivisivel%3==0:
 else:
     print(numerodivisivel,'não é divisivel por 3')
 
+#.5- Faça um algoritmo para receber um número qualquer do usuário e informar na tela se é par ou se
+#é ímpar
+num=int(input('digite um numero par ou impar: '))
+if num%2==0:
+    print(num,'é par')
+else:
+    print(num,'é impar')
+
+#.6- Brincadeira do PAR ou ÍMPAR. Pergunte para o usuário se ele aposta em PAR ou ÍMPAR. Depois
+#disso, peça para ele digitar um número de 0 a 5 (como se fosse mostrar os dedos da mão. Sorteie
+#um número de 0 a 5 e some com o que o usuário digitou. Se o usuário escolheu PAR e o valor da
+#soma for par OU se ele escolheu ÍMPAR e o valor da soma é ímpar, diga que ele venceu. Senão, diga
+#que o programa venceu
+import random
+aposta=int(input('você aposta em 2 ou 1: '))
+numDoUser=int(input('digite um numero de 0 a 5: '))
+sorteio=random.randint(0,5)
+print('o computador jogou',sorteio)
+print('você jogou',numDoUser)
+resultadoDaAposta=sorteio+numDoUser
+if resultadoDaAposta%aposta==0:
+    print('você ganhou')
+else:
+    print('você perdeu')
+    
+
+
+
+
+
+
+
+
+
+
 
 
 
