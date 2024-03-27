@@ -1,6 +1,6 @@
 #coversor hexadecimal
-print(hex(234))
+print(hex(6))
 #conversor binario
-print(bin(1000))
+print(bin(69))
 #conversor decimal
 print()
