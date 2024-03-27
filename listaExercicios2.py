@@ -59,29 +59,32 @@ numeroDePassaros=int(input('quantos passáros você possui? '))
 totalRacaoDiaria=racao*numeroDePassaros
 print('para alimentar',numeroDePassaros,'passáros você precisa de',totalRacaoDiaria,'gramas de ração por dia')
 
-#.8-
+#.8-Um usuário deseja converter a temperatura de Celsius para Fahrenheit. Escreva um programa que
+#leia a temperatura em Celsius e exiba a temperatura equivalente em Fahrenheit.
+celsius=float(input('quantos graus celsius: '))
+fahrenheit=celsius*1.8+32
+print(celsius,'graus celsius são',fahrenheit,'graus na escala fahrenheit de temperatura')
 
+#.9-Durante uma liquidação uma loja resolveu dar quinze por cento de desconto nas compras feitas
+#pelos clientes. Faça um programa que leia o valor da compra e escreva o valor da compra com o
+#desconto.
+valorCompra=float(input('digite o valor da compra: '))
+desconto=1-0.15
+valorFinalDaCompra=valorCompra*desconto
+print('a sua compra de',valorCompra,'reais recebeu um desconto de 15%, o total fica',valorFinalDaCompra,'reais')
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#.10-O lojista gostou tanto do seu programa anterior que encomendou outro. Dessa vez ele quer que
+#você calcule quanto cada cliente gastou na loja apenas informando o número de camisetas, calças
+#e cintos comprados. As camisetas custam R$ 25,00, as calças cem reais e os cintos 40 reais. Some o
+#valor da compra e ao final dê um desconto de 10 por cento sobre o total. Exiba na tela o valor do
+#desconto e o valor da compra.
+camiseta=float(input('informe o numero de camisetas compradas: '))
+calça=float(input('informe o numero de calças compradas: '))
+cinto=float(input('informe o numero de cintos comprados: '))
+valorCamiseta=25.00 * camiseta
+valorCalça=100.00 * calça
+valorCinto=40.00 * cinto
+totalLoja=valorCamiseta+valorCalça+valorCinto
+descontoRoupas=1-0.10
+ValorFinalRoupas=totalLoja*descontoRoupas
+print('você comprou',totalLoja,'reais em roupas e recebeu um desconto de 10%, o valor final com desconto ficou',ValorFinalRoupas,'reais')
