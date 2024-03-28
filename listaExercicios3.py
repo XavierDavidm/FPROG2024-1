@@ -87,6 +87,52 @@ else:
 precofinal=produto+taxaLucro
 print('o produto deve ser vendido por',precofinal,'reais')
 
+#.9-Faça um conversor de câmbio de reais/dólar/euro. O usuário deve informar inicialmente a cotação
+#de cada moeda em relação ao real. Depois apresente o seguinte menu:
+#1) Converter de Real para Euro
+#2) Converter de Real para Dólar
+#3) Converter de Euro para Dólar
+#4) Converter de Euro para Real
+#5) Converter de Dólar para Euro
+#6) Converter de Dólar para Real
+#Leia o valor a ser convertido na moeda de origem e imprima na tela a quantidade na moeda
+#destino.
+real=float(input('informe a cotação atual do real: '))
+dolar=float(input('informe a cotação atual do dolar para real: '))
+euro=float(input('informe a cotação atual do euro para real: '))
+print('1) Converter de Real para Euro')
+print('2) Converter de Real para Dólar')
+print('3) Converter de Euro para Dólar')
+print('4) Converter de Euro para Real')
+print('5) Converter de Dólar para Euro')
+print('6) Converter de Dólar para Real')
+
+moedaOrigem=input('digite a moeda a origem para o cambio')
+moedaDestino=input('digite a moeda a que deseja obter com o cambio')
+quantidadeMoeda=float(input('digite a quantidade da moeda origem que deseja converter'))
+if moedaOrigem=='real':
+    if moedaDestino=='euro':
+        totalCambio=quantidadeMoeda*euro
+    else:
+        totalCambio=quantidadeMoeda*dolar
+elif moedaOrigem=='euro':
+    if moedaDestino=='dolar':
+        totalCambio=quantidadeMoeda*dolar
+    else:
+        totalCambio=quantidadeMoeda*real
+else:
+    if moedaDestino=='euro':
+        totalCambio=quantidadeMoeda*euro
+    else:
+        totalCambio=quantidadeMoeda*real
+
+print(quantidadeMoeda,moedaOrigem,'se convertem para',totalCambio,moedaDestino)
+
+
+
+
+
+
 
 
 
