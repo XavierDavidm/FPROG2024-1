@@ -134,28 +134,79 @@ while conversaoEscolhida !=(1,2,3,4,5,6):
 #simule dados de 4, 6, 8, 10, 12 ou 16 faces (apenas estes valores). Peça para o usuário informar no
 #começo do programa quantas faces quer, para depois fazer o sorteio.
 import random
+d2=random.randint(1,2)
+d4=random.randint(1,4)
+d6=random.randint(1,6)
+d8=random.randint(1,8)
+d12=random.randint(1,12)
+d16=random.randint(1,16)
 dadoescolhido=0
-while dadoescolhido !=('2','4','6','8','12','16'):
-    dadoescolhido=input('qual escolha o dado que deseja simular,(2,4,6,8,12 ou 16 lados): ')
-    if dadoescolhido =='2':
-        random.randint(1,2)
-    elif dadoescolhido =='4':
-        random.randint(1,4)
-    elif dadoescolhido =='6':
-        random.randint(1,6)
-    elif dadoescolhido =='8':
-        random.randint(1,8)
-    elif dadoescolhido =='12':
-        random.randint(1,12)
-    elif dadoescolhido =='16':
-        random.randint(1,16)
+while dadoescolhido!=2 and dadoescolhido!=4 and dadoescolhido!=6 and dadoescolhido!=8 and dadoescolhido!=12 and dadoescolhido!=16:
+    dadoescolhido=int(input('qual escolha o dado que deseja simular,(2,4,6,8,12 ou 16 lados): '))
+    if dadoescolhido == 2:
+        print('você jogou um Dado de 2 lados e o resultado foi',d2)
+    elif dadoescolhido == 4:
+        print('você jogou um Dado de 4 lados e o resultado foi',d4)
+    elif dadoescolhido == 6:
+        print('você jogou um Dado de 6 lados e o resultado foi',d6)
+    elif dadoescolhido == 8:
+        print('você jogou um Dado de 8 lados e o resultado foi',d8)
+    elif dadoescolhido == 12:
+        print('você jogou um Dado de 12 lados e o resultado foi',d12)
+    elif dadoescolhido == 16:
+        print('você jogou um Dado de 16 lados e o resultado foi',d16)
     else:
-        print('o dado escolhido não é valido! por favor escolha um dos dados listados')
+        print('O dado escolhido não é valido! por favor escolha outro dado listado')
 
+#.11- Crie um programa para informar quais e quantas notas são necessárias para entregar o mínimo de
+#cédulas para um determinado valor informado pelo usuário considerando notas de R$ 100, R$ 50,
+#R$ 20, R$ 10 e R$ 5 e R$ 1. Seu programa deve mostrar apenas as notas utilizadas. Por exemplo, ao
+#solicitar R$18, o programa deve informar apenas a seguinte informação (note que não foram
+#exibidas informações sobre as demais cédulas):
+#1 nota(s) de R$ 10.
+#1 nota(s) de R$ 5.
+#3 nota(s) de R$ 1.
+totalNotasUser=int(input('informe a quantia que deseja trasformar em cédulas: '))
+notas100=0
+notas50=0
+notas20=0
+notas10=0
+notas5=0
+notas1=0
+while totalNotasUser>=100:
+    totalNotasUser=totalNotasUser-100
+    notas100=notas100+1
+while totalNotasUser>=50:
+    totalNotasUser=totalNotasUser-50
+    notas50=notas50+1
+while totalNotasUser>=20:
+    totalNotasUser=totalNotasUser-20
+    notas20=notas20+1
+while totalNotasUser>=10:
+    totalNotasUser=totalNotasUser-10
+    notas10=notas10+1
+while totalNotasUser>=5:
+    totalNotasUser=totalNotasUser-5
+    notas5=notas5+1
+while totalNotasUser>=1:
+    totalNotasUser=totalNotasUser-1
+    notas1=notas1+1
+if notas100 > 0:
+    print(notas100,'nota(s) de R$ 100')
+if notas50 > 0:
+    print(notas50,'nota(s) de R$ 50')
+if notas20 > 0:
+    print(notas20,'nota(s) de R$ 20')
+if notas10 > 0:
+    print(notas10,'nota(s) de R$ 10')
+if notas5 > 0:
+    print(notas5,'nota(s) de R$ 5')
+if notas1 > 0:
+    print(notas1,'nota(s) de R$ 1')
+if notas1==0 and notas5==0 and notas10==0 and notas20==0 and notas50==0 and notas100==0:
+    print('você não digitou um valor valido para converter em cédulas')
 
-
-
-
+#.12-u
 
 
 
