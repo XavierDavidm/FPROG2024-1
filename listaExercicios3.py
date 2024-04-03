@@ -275,4 +275,43 @@ while notaGA < 0 or notaGB <0 or notaGA > 10 or notaGB > 10:
                             else:
                                 print('sua média final foi',mediaF)
                                 print('você foi reprovado mesmo com o grau C')
-#.14- 
+
+#.14- Criar um programa para identificar o valor a ser pago por um plano de saúde dada a idade do
+#conveniado considerando que todos pagam R$ 300 e mais um adicional (se tiver dependentes)
+#conforme a seguinte tabela:
+#a) crianças com menos de 10 anos pagam R$100;
+#b) dependentes com idade entre 10 e 30 anos pagam R$220;
+#c) dependentes com idade entre 31 e 60 anos pagam R$ 395; e
+#d) dependentes com mais de 60 anos pagam R$ 480
+dependente=0                                          
+totalplano=300+dependente
+temdependente=-1
+while temdependente !='S' and temdependente !='N':
+        temdependente=input('você possui dependente(s) (S) ou (N)')
+        if temdependente == 'N':
+            totalplano=300
+            print('o total do seu plano é',totalplano)
+        elif temdependente == 'S':
+            idadeDependente=-1
+            while idadeDependente < 0:
+                idadeDependente=int(input('coloque a idade do dependente: '))  
+                if idadeDependente <= 10:
+                    dependente=100
+                elif idadeDependente > 10 and idadeDependente <= 30:
+                    dependente=220
+                elif idadeDependente >= 31 and idadeDependente <=60:
+                    dependente=395
+                elif idadeDependente > 60:
+                    dependente=480
+                else:
+                    print('idade inválida, por favor coloque uma idade válida')
+        else:
+            print('resposta inválida, por favor responda se possui ou não dependentes usando (S) ou (N)')
+
+
+
+
+
+
+
+
