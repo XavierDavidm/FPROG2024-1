@@ -287,31 +287,69 @@ dependente=0
 totalplano=300+dependente
 temdependente=-1
 while temdependente !='S' and temdependente !='N':
-        temdependente=input('você possui dependente(s) (S) ou (N)')
+        temdependente=input('você possui dependente(s) (S) ou (N): ')
         if temdependente == 'N':
             totalplano=300
             print('o total do seu plano é',totalplano)
         elif temdependente == 'S':
             idadeDependente=-1
             while idadeDependente < 0:
+                totalplano=300+dependente
                 idadeDependente=int(input('coloque a idade do dependente: '))  
-                if idadeDependente <= 10:
+                if idadeDependente < 0:
+                    print('idade inválida, por favor coloque uma idade válida')
+                elif idadeDependente <= 10:
                     dependente=100
+                    totalplano=300+dependente
+                    print('o total a pagar pelo convenio é: ',totalplano)
                 elif idadeDependente > 10 and idadeDependente <= 30:
                     dependente=220
-                elif idadeDependente >= 31 and idadeDependente <=60:
+                    totalplano=300+dependente
+                    print('o total a pagar pelo convenio é: ',totalplano)
+                elif idadeDependente >= 31 and idadeDependente <= 60:
                     dependente=395
+                    totalplano=300+dependente
+                    print('o total a pagar pelo convenio é: ',totalplano)
                 elif idadeDependente > 60:
                     dependente=480
-                else:
-                    print('idade inválida, por favor coloque uma idade válida')
+                    totalplano=300+dependente
+                    print('o total a pagar pelo convenio é: ',totalplano)
+                
         else:
             print('resposta inválida, por favor responda se possui ou não dependentes usando (S) ou (N)')
 
+#.15- Elabore um algoritmo que calcule o que deve ser pago por um produto, considerando o preço
+#normal de etiqueta e a escolha da condição de pagamento. Utilize os códigos da tabela a seguir
+#para ler qual a condição de pagamento escolhida e efetuar o cálculo adequado.
+#1 - À vista em dinheiro, recebe 15% de desconto
+#2 - À vista no cartão de crédito, recebe 10% de desconto
+#3 - Em duas vezes, preço normal de etiqueta sem juros
+#4 - Em três vezes, preço normal de etiqueta mais juros de 10%
+etiqueta=-1
+while etiqueta < 0:
+    etiqueta=float(input('digite o valor da etiqueta do produto: '))
+    if etiqueta < 0:
+        print('valor do produto inválido, por favor registre o valor correto')
+formaDePagamento=-1
+while formaDePagamento!='dinheiro' and formaDePagamento!='cartão' and formaDePagamento!='cartão2x' and formaDePagamento!='cartão3x':
+    print('À vista em dinheiro(15% de desconto)',          '(dinheiro)') 
+    print('À vista no cartão de crédito(10% de desconto)', '(cartão)')
+    print('Em duas vezes(sem juros)',                      '(cartão2x)')
+    print('Em três vezes(juros de 10%)',                   '(cartão3x)')
+    formaDePagamento=input('digite a forma de pagamento que deseja (por favor digite a opção entre parenteses): ')
+    if formaDePagamento=='dinheiro':
+        totalfinalproduto=etiqueta*0.85
+        print('você pagou em dinheiro à vista',totalfinalproduto,'reais')
+    elif formaDePagamento=='cartão':
+        totalfinalproduto=etiqueta*0.90
+        print('você pagou no cartão à vista',totalfinalproduto,'reais')
+    elif formaDePagamento=='cartão2x':
+        totalfinalproduto=etiqueta
+        print('você pagou no cartão em duas vezes',totalfinalproduto,'reais')     
+    elif formaDePagamento=='cartão3x':
+        totalfinalproduto=etiqueta*1.10
+        print('você pagou no cartão em tres vezes',totalfinalproduto,'reais')
+    else:
+        print('forma de pagamento inválida, por favor insira novamente a forma de pagamento que deseja de acordo com a tabela a seguir')
 
-
-
-
-
-
-
+#fim lista de exercícios 03!
