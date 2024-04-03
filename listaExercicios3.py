@@ -106,7 +106,7 @@ print('4) Converter de Euro para Real')
 print('5) Converter de Dólar para Euro')
 print('6) Converter de Dólar para Real')
 conversaoEscolhida=0
-while conversaoEscolhida !=(1,2,3,4,5,6):
+while conversaoEscolhida !=1 and conversaoEscolhida !=2 and conversaoEscolhida !=3 and conversaoEscolhida !=4 and conversaoEscolhida !=5 and conversaoEscolhida !=6:
     conversaoEscolhida=int(input('digite o número da conversão que deseja realizar: '))
     quantidadeMoeda=float(input('digite a quantidade da moeda origem que deseja converter: '))
     CRE=quantidadeMoeda/euro
@@ -206,11 +206,73 @@ if notas1 > 0:
 if notas1==0 and notas5==0 and notas10==0 and notas20==0 and notas50==0 and notas100==0:
     print('você não digitou um valor valido para converter em cédulas')
 
-#.12-u
+#.12- A confederação brasileira de natação irá promover eliminatórias para o próximo mundial. Fazer um
+#algoritmo que receba a idade de um nadador e imprima a sua categoria segundo a tabela a seguir:
 
+idade=0
+while idade <=0:
+    idade=int(input('digite sua idade para saber sua categoria: '))
+    if idade >= 5 and idade <=7:
+        print('você faz parte da categoria Infantil A')
+    elif idade >= 8 and idade <=10:
+        print('você faz parte da categoria Infantil B')
+    elif idade >= 11 and idade <=13:
+        print('você faz parte da categoria Juvenil A')
+    elif idade >= 14 and idade <=17:
+        print('você faz parte da categoria Juvenil B')
+    elif idade >= 18:
+        print('você faz parte da categoria Senior')
+    elif idade <=0:
+        print('idade invalida por favor, digite sua idade corretamente')
+    elif idade <=5:
+        print('sua idade é baixa demais para entrar em uma categoria')
 
-
-
-
-
-
+#.13- Faça um programa que leia a nota do Grau A e do Grau B do aluno e calcule a média final conforme
+#as regras da Unisinos. Imprima a média final na tela e diga se o aluno passou por média ou se ficou
+#em recuperação (grau C). Se o aluno ficou em recuperação, pergunte se ele quer substituir o Grau
+#A ou o Grau B (ele deve digitar ‘a’ ou ‘b’). Leia a nota do Grau C, recalcule a média de acordo com o
+#grau substituído e imprima na tela o resultado, informando se ele foi aprovado ou reprovado.
+notaGA=-1
+notaGB=-1
+while notaGA < 0 or notaGB <0 or notaGA > 10 or notaGB > 10:
+    notaGA=float(input('digite sua nota do grau A: '))
+    notaGB=float(input('digite sua nota do grau B: '))
+    mediaF=round(notaGA*1/3 + notaGB*2/3)
+    if notaGA < 0 or notaGB < 0 or notaGA > 10 or notaGB > 10:
+        print('nota invalida!, por favor informe uma nota de 0 a 10')
+    elif mediaF >=6:
+        print('sua média final foi',mediaF)
+        print('você foi aprovado, parabéns!')
+    else:
+        print('sua média final foi',mediaF)
+        print('Você não foi aprovado, deverá realizar a recuperação(grau C)')
+        notaGC=-1
+        while notaGC < 0 or notaGC >10:
+            notaGC=float(input('digite sua nota do grau C (recuperação): '))
+            if notaGC < 0 or notaGC >10:
+                print('nota invalida!, por favor informe uma nota de 0 a 10')
+            else:
+                escolharec=1
+                while escolharec !='a' and escolharec !='b':
+                    escolharec=input('escolha qual grau deseja substuir (a) ou (b): ')
+                    if escolharec !='a' and escolharec!='b':
+                        escolharec=1
+                        print('por favor escolha qual grau será substituido (a) ou (b)')
+                    else:
+                        if escolharec =='a':
+                            mediaF=round(notaGC*1/3 + notaGB*2/3)
+                            escolharec='a'
+                            if mediaF >= 6:
+                                print('você foi aprovado com',mediaF,'média parabéns!')
+                            else:
+                                print('sua média final foi',mediaF)
+                                print('você foi reprovado mesmo com o grau C')
+                        elif escolharec =='b':
+                            mediaF=round(notaGA*1/3 + notaGC*2/3)
+                            escolharec='b'
+                            if mediaF >= 6:
+                                print('você foi aprovado com',mediaF,'média parabéns!')
+                            else:
+                                print('sua média final foi',mediaF)
+                                print('você foi reprovado mesmo com o grau C')
+#.14- 
