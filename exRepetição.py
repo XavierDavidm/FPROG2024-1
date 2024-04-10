@@ -91,7 +91,7 @@ while vencedor==0:
     if hamster1==12:
         vencedor=1
     if hamster2==12:
-        if vencedor ==0:
+        if vencedor==0:
             vencedor=2
         else: 
             vencedor=3
