@@ -120,11 +120,34 @@ while acerto!=True:
             else:
                 print('dica: o número do sorteio é menor que a sua resposta!')
 
+#3- Elabore um programa que lê um número de 1 a 9 e mostra a tabuada de multiplicação do número.
+def tabuada(n):
+    for i in range(1,11):
+        res=n*i
+        print(n,'x',i,'=',res)
 
+continuar=True
 
+while continuar!=False:
+    escolhaT=int(input('digite o número da tabuada que deseja: '))
+    print('exibindo a tabuada do número',escolhaT,'...')
+    tabuada(escolhaT)
+    repetir=0
+    while repetir !='s' and repetir !='n':
+        repetir=input('Calcular outro número (s/n)?')
+        if repetir=='s':
+            continuar=True
+        elif repetir=='n':
+            continuar=False
+            print('encerrando programa...')
+        else:
+            print('Erro! por favor digite s ou n')
+            repetir=0
 
-
-
+#4- Escrever um programa que calcule todos os números divisíveis por certo valor indicado pelo usuário (o
+#resto da divisão por este número deve ser igual a zero), compreendidos em um intervalo também
+#especificado pelo usuário. O usuário deve entrar com um primeiro valor correspondente ao divisor e
+#após ele vai fornecer o valor inicial do intervalo, seguido do valor final deste intervalo.
 
 
 
