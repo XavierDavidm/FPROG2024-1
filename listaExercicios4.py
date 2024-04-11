@@ -28,6 +28,39 @@ for C in range(70,24,-1):
     print(C)
 print('#####')
 
+#1D)
+for D in range(95,24,-2):
+    print(D)
+print('#####')
 
+#1E)
+numR=0
+numS=0
+cont=0
+
+while cont<15:
+    numR=float(input('digite um número: '))
+    cont=cont+1
+    print(cont,')',numR)
+    numS=numS+numR
+    numM=numS/15
+print('a soma dos quinze números acima é',numS)
+print('a média dos quinze números acima é',numM)
+
+#1F) 
+cont=0
+numR=0
+contP=0
+contN=0
+
+while cont<10:
+    numR=int(input('digite um número inteiro: '))
+    cont=cont+1
+    print(cont,')',numR)
+    if numR%2:
+        contP=contP+1
+    else:
+        contN=contN+1
+print('entre os 10 números digitados acima',contP,'são pares e',contN,'são ímpares')
 
 
