@@ -63,4 +63,80 @@ while cont<10:
         contN=contN+1
 print('entre os 10 números digitados acima',contP,'são pares e',contN,'são ímpares')
 
+#1G)
+import random
+nSort=0
+num=0
+contPOS=0
+contNE=0
+contNUL=0
+while nSort<20:
+    num=random.randint(-10,10)
+    if num < 0:
+        print(num,'é negativo')
+        contNE=contNE+1
+    elif num == 0:
+        print(num,'é nulo')
+        contNUL=contNUL+1
+    else:
+        print(num,'é positivo')
+        contPOS=contPOS+1
+    nSort=nSort+1
+print('entre os 20 números sorteados',contPOS,'são positivos',',',contNE,'são negativos e',contNUL,'são nulos')
+
+#1H)
+num=0
+numR=0
+nLido=0
+numS=0
+n=int(input('informe quantos números devem ser lidos: '))
+print(n,'números serão lidos abaixo')
+while nLido<n:
+    numR=float(input('digite um número: '))
+    nLido=nLido+1
+    print(nLido,')',numR)
+    numS=numS+numR
+print('a soma de todos os',n,'números é',numS)
+
+#2- Implemente um programa que sorteia um número de 1 a 10 e dá ao usuário 3 tentativas de acertá-lo.
+#A cada tentativa errada, o programa informa se o número a adivinhar está abaixo ou acima.
+
+import random
+sorteio=random.randint(1,10)
+tentativas=0
+acerto=False
+while acerto!=True:
+    while tentativas <3 and acerto!=True:
+        resposta=int(input('o computador fez um sorteio de um número de 1 a 10, qual número você acha que é? '))
+        if resposta==sorteio:
+            print('Você Acertou')
+            acerto=True
+        else:
+            print('Resposta Errada!')
+            tentativas=tentativas+1
+            acerto=False
+            if resposta < sorteio:
+                print('dica: o número do sorteio é maior que a sua resposta!')
+            else:
+                print('dica: o número do sorteio é menor que a sua resposta!')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

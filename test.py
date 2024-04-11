@@ -1,15 +1,22 @@
-num=0
-numR=0
-nLido=0
-numS=0
-n=int(input('informe quantos números devem ser lidos: '))
-print(n,'números serão lidos abaixo')
-while nLido<n:
-    numR=float(input('digite um número: '))
-    nLido=nLido+1
-    print(nLido,')',numR)
-    numS=numS+numR
-print('a soma de todos os',n,'números é',numS)
+def tabuada(n):
+    for i in range(1,11):
+        res=n*i
+        print(n,'x',i,'=',res)
 
+continuar=True
 
-
+while continuar!=False:
+    escolhaT=int(input('digite o número da tabuada que deseja: '))
+    print('exibindo a tabuada do número',escolhaT,'...')
+    tabuada(escolhaT)
+    repetir=0
+    while repetir !='s' and repetir !='n':
+        repetir=input('Calcular outro número (s/n)?')
+        if repetir=='s':
+            continuar=True
+        elif repetir=='n':
+            continuar=False
+            print('encerrando programa...')
+        else:
+            print('Erro! por favor digite s ou n')
+            repetir=0
