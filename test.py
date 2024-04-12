@@ -1,22 +1,7 @@
-def tabuada(n):
-    for i in range(1,11):
-        res=n*i
-        print(n,'x',i,'=',res)
-
-continuar=True
-
-while continuar!=False:
-    escolhaT=int(input('digite o número da tabuada que deseja: '))
-    print('exibindo a tabuada do número',escolhaT,'...')
-    tabuada(escolhaT)
-    repetir=0
-    while repetir !='s' and repetir !='n':
-        repetir=input('Calcular outro número (s/n)?')
-        if repetir=='s':
-            continuar=True
-        elif repetir=='n':
-            continuar=False
-            print('encerrando programa...')
-        else:
-            print('Erro! por favor digite s ou n')
-            repetir=0
+divisor=int(input('digite o número divisor: '))
+a=int(input('digite o número de inicio do intervalo: '))
+b=int(input('digite o número de final do intervalo: '))
+print('calculando todos os números divisíveis por',divisor,'dentro do intervalo de',a,'até',b)
+for divido in range(a,b+1):
+    if divido%divisor==0:
+        print(divido,'é divisivél por',divisor)
