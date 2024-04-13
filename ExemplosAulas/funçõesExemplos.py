@@ -74,6 +74,29 @@ grauFinal= mediaUni(grauA,grauB)
 print(grauFinal,'é sua media final')
 #usando retorno e função para fazer e dizer a media 
 
+#menus exemplo
+#area import#
+import os
+
+#area funçao#
+def menu():
+    print('titulo menu')
+    #limpa tela
+    os.system('cls' if os.name=='nt' else 'clear')
+    print('1 - opção 1')
+    print('2 - opção 2')
+    print('3 - opção 3')
+    print('0 - opção 0')
+    item= input('escolha uma opção: ')
+    return item
+
+#main#
+#continuar......
+
+
+
+
+
 
 
 

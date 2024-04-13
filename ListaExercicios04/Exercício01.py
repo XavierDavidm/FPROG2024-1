@@ -1,4 +1,5 @@
 #lista 04 while e for
+
 #.1 Faça um algoritmo para:
 #a. Gerar e escrever todos os números inteiros do intervalo [0,100].
 #b. Gerar e escrever os números pares do intervalo [20,50].

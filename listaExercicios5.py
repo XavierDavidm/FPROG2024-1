@@ -1,4 +1,4 @@
-#1 leia o nome do usario e criar uma função para cumprimentar o usuario usando seu nome
+#1- leia o nome do usario e criar uma função para cumprimentar o usuario usando seu nome
 
 def cumprimentar(nome):
     print('Olá, seja bem vindo',nome,'!')
@@ -15,9 +15,19 @@ for i in range(5):
     nome= input(", digite seu nome: ")
     cumprimentar(nome)
 
-#2 
+#2- tabuada
 
+#area funçao#
+def tabuada(n):
+    for i in range(1,11):
+        res=n*i
+        print(n,'x',i,'=',res)
 
+#main#
+n=int(input('digite um número para saber a tabuada dele: '))
+tabuada(n)
+
+#3- 
 
 
 
