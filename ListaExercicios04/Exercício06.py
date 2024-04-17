@@ -22,4 +22,4 @@ def oGrandeSorteio():
 
 #executar
 oGrandeSorteio()
-#exercicio refeito usando funções min/max
+#exercicio refeito usando funções
