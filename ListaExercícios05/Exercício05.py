@@ -39,22 +39,22 @@ while encerrar!=True:
     print('0 - encerrar programa')
     tarefa=int(input('por favor digite o número da opção que desejar executar: '))
     if tarefa==1:
-        n1=float(input('digite o número que deseja somar'))
-        n2=float(input('digite o outro número que deseja somar'))
+        n1=float(input('digite o número que deseja somar: '))
+        n2=float(input('digite o outro número que deseja somar: '))
         resposta=somar(n1,n2)
         print('a soma de',n1,'e',n2,'é',resposta)
         encerrar=False
 
     elif tarefa==2:
-        n1=float(input('digite o número que deseja subtrair'))
-        n2=float(input('digite o outro número que deseja subtrair'))
+        n1=float(input('digite o número que deseja subtrair: '))
+        n2=float(input('digite o outro número que deseja subtrair: '))
         resposta=subtrair(n1,n2)
         print('a subtração de',n1,'e',n2,'é',resposta)
         encerrar=False
 
     elif tarefa==3:
-        n1=float(input('digite o número que deseja multiplicar'))
-        n2=float(input('digite o outro número que deseja multiplicar'))
+        n1=float(input('digite o número que deseja multiplicar: '))
+        n2=float(input('digite o outro número que deseja multiplicar: '))
         resposta=multiplicar(n1,n2)
         print('a multiplicação de',n1,'e',n2,'é',resposta)
         encerrar=False
@@ -62,10 +62,10 @@ while encerrar!=True:
     elif tarefa==4:
         divisor=0
         while divisor==0:
-            n1=float(input('digite o número que deseja dividir'))
-            n2=float(input('digite o outro número que será o divisor'))
+            n1=float(input('digite o número que deseja dividir: '))
+            n2=float(input('digite o outro número que será o divisor: '))
             if n2 ==0:
-                print('ERRO! é impossivél dividir qualquer número por 0, escolha outro número para ser o divisor.')
+                print('ERRO! é impossível dividir qualquer número por 0, escolha outro número para ser o divisor.')
                 divisor=0
             else:
                 resposta=dividir(n1,n2)
@@ -80,6 +80,3 @@ while encerrar!=True:
     else:
         print('ERRO! por favor digite o número válido correspondente a uma das operações listadas no menu.')
         encerrar=False
-
-
-
