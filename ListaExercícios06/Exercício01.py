@@ -52,6 +52,21 @@ from decimal import Decimal
 produtoV= Decimal(1)
 for elemento in V:
     produtoV *= Decimal(elemento)
-    print(produtoV)
+    #print(produtoV) #passo a passo da multiplicação
 print('a soma do array V é',sum(V))
 print('o produto do array V é',produtoV)
+
+#g) e #h)
+Vinvertido=V[::-1]
+print('o inverso do array V é',Vinvertido)
+
+#i)
+vPar=[]
+vImpar=[]
+for elemento in V:
+    if elemento%2==0:
+        vPar.append(elemento)
+    else:
+        vImpar.append(elemento)
+print('os elementos pares contidos no array V são:',vPar)
+print('os elementos impares contidos no array V são:',vImpar)
