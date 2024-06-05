@@ -9,7 +9,6 @@ def iniciar():
     POS=[0]*N
     return POS
 
-
 POS=iniciar()
 print(POS)
 
