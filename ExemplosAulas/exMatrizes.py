@@ -11,7 +11,7 @@ print(M)
 print(len(M))    #-->n de linhas(n de arrays)
 print(len(M[0])) #-->n de colunas(n de elementos)
 
-#acesso #relenbrar os pares ordenados (x,y)
+#acesso #relembrar os pares ordenados (x,y)
 print(M[0][0]) #sempre usando os indices(M[Linha][coluna])
 print(M[2][1])
 
