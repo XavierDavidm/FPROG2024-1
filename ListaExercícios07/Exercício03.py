@@ -3,21 +3,23 @@
 #elementos são 0 (zero). Crie uma função que gere uma matriz identidade 4x4
 
 MI=[]
-
-
-
-def GerarMatrixIdentidade():
-    for x in range(4):
+nLinhas=4
+nColunas=4
+def MatrixIdentidade4x4(nLinhas,nColunas):
+    for x in range(nLinhas): #cria todos os zeros em 4x4
         novaLinha=[]
-        for y in range(4):
+        for y in range(nColunas):
             novoElemento=0
             novaLinha.append(novoElemento)
         MI.append(novaLinha)
-        return MI
+    for cont in range(4):    #troca os zeros por 1 na diagonal
+        (MI[cont][cont])=1
+        cont=cont+1
+    return MI
 
-
-GerarMatrixIdentidade()
-for x in range(len(MI)):
-    for y in range(len(MI[0])):
-        print(MI[x][y], end='\t')
+MatrixIdentidade4x4(nLinhas,nColunas)
+for L in range(len(MI)):      #leitor
+    for C in range(len(MI[0])):
+        print(MI[L][C], end="\t")
     print()
+
